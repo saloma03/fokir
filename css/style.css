@@ -1,0 +1,662 @@
+/*------------general style----------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3{
+    font-family: "Source Sans 3", sans-serif;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.clear-fix{
+    clear: both;
+}
+.container{
+    margin: auto;
+    width: 80%;
+}
+i{
+    color: #fff;
+    padding: 0px 5px;
+}
+/*--------main style------------------------------*/
+/*----------------nav----------------------*/
+.home{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FF305B;
+    text-align: center;
+    overflow: auto;
+    position: relative;
+}
+.home .nav-bar{
+    position: fixed;
+    z-index: 99999;
+
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.356);
+    padding-block: 10px;
+    
+}
+.home .left-part{
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    padding: 10px;
+    float: left;
+    line-height: 25px;
+    width: 50%;
+}
+.home .left-part a{
+    margin-right: 50px;
+    
+    color: #FF305B;
+}
+.home .right-part{
+    font-weight: 300;
+    line-height: 20px;
+    width: 50%;
+    float: left;
+}
+
+.home .right-part ul{
+    margin-left: 50px;
+}
+
+
+.home .right-part li{
+    float: left;
+    padding: 10px;
+
+}
+.home .right-part a:hover{
+    color: #FF305B;
+}
+/*==========main-content==============*/
+.home .main-content{
+    margin-top: 500px;
+    margin: auto;
+    vertical-align: middle;
+    display: table-cell;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+.home .main-content h3{
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+}
+.home .main-content h1{
+    font-weight: 700;
+    font-size: 70px;
+    margin-bottom: 10px;
+
+    line-height: 77px;
+}
+.home .main-content h4{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+    /* background-color: #EC2403; */
+    font-size: 26px;
+    line-height: 31px;
+
+}
+.home .main-content h4::after{
+    content: "";
+    animation: typing 4s infinite steps(10, end);
+}
+
+/*want to make the line but didnt work*/
+.home .main-content h4 ::after{
+    content: "";
+    border-left: 2px solid #fff;
+}
+/*=========about-section====================*/
+.about{
+    padding: 100px 0 0 125px;
+}
+.about .left-part{
+    width: 33.333%;
+    float: left;
+    border: 7px solid #555555;
+    border-radius: 3px;
+    position: relative;
+}
+.about .left-part img{
+    width: 100%;
+    
+    display: block;
+}
+.about .left-part .photo-container{
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+.about .left-part .photo-container:hover .overlay{
+    top: 0;
+}
+
+.about .left-part .overlay{
+    background-color: rgba(0, 0, 0, 0.532);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    transition: 1s;
+    /* top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; */
+}
+
+
+.about .right-part{
+    width: 58.333%;
+    float: left;
+    padding-left: 70px;
+}
+.about .right-part h2{
+    font-weight: 600;
+    font-size: 34px;
+    color: rgb(51, 51, 51);
+    line-height: 22px;
+    text-transform: uppercase;
+    
+}
+.about .right-part h2::before{
+    content: "";
+    background-color: #FF305B;
+    height: 100%;
+    position: relative;
+    right: 5px;
+    width: 4px;
+    padding-right: 5px;
+}
+.about .right-part p{
+    color: rgb(85, 85, 85);
+    line-height: 25px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.about .right-part p::after{
+    content: "";
+    border-bottom: dotted rgb(85, 85, 85) 2px;
+    padding: 5px 0;
+}
+.about .right-part ul{
+    float: left;
+    width: 50%;
+    
+}
+.about .right-part li,.about .right-part a{
+    margin-bottom: 25px;
+    color: rgb(85, 85, 85);
+
+}
+.about .right-part span{
+    color: black;
+    font-weight: 500;
+}
+.about .right-part .button a ,
+.contact-us .container-contact .button a{
+    float: left;
+    width: fit-content;
+    border: #FF305B 2px solid;
+    background-color: #FF305B;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-right: 15px;
+    color: #fff;
+    line-height: 25px;
+}
+
+.about .right-part .button a:hover,
+.contact-us .container-contact .button a:hover{
+    background-color: #EC2403;
+}
+/*==================ourservice====================================*/
+.service{
+    padding: 100px 0 125px 0;
+    background-color: #F1F1F1;
+    margin-top: 80px;
+    text-align: center;
+}
+.service .header h2,
+.portfolio .header h2,
+.feedback .container h2,
+.contact-us .container h2,
+.our-blog h2{
+    font-weight: 800;
+    font-size: 40px;
+    color: rgb(51, 51, 51)    ;
+    line-height: 30px;
+    position: relative;
+    padding-bottom: 35px;
+}
+.service .header h2::before
+,.portfolio .header h2::before
+,.feedback .container h2::before,
+.contact-us .container h2::before
+,.our-blog h2::before{
+    content: "";
+    position: absolute;
+    border: solid #ff305b;
+    border-width: 2px 0;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70px;
+    padding: 4px 0 5px;
+
+}
+
+.service .header h2::after
+,.portfolio .header h2::after
+,.feedback .container h2::after,
+.contact-us .container h2::after,
+.our-blog h2::after{
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 2px;
+    width: 160px;
+
+}
+
+.service .item{
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+    padding: 10px 0 10px 0;
+
+}
+.service .item:hover i{
+    font-size: 40px;
+}
+
+.service .item:hover {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.356);
+    
+}
+.service .item  h3{
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    line-height: 26px;
+    font-size: 24px;
+}
+.service .item  p{
+    font-weight: 400;
+    color:rgb(85, 85, 85);
+    line-height: 25px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.service .item i{
+    color: #FF305B;
+    font-size: 36px;
+    padding: 20px 0;
+    transition: all 1s ease-in-out 0s;
+
+}
+/*====portfolio========*/
+.portfolio{
+    padding: 100px 0 100px 0;
+    text-align: center;
+}
+
+.portfolio ul{
+    width: fit-content;
+    margin: auto;
+}
+.portfolio ul li{
+    float: left;
+    padding: 15px;
+}
+.portfolio li a{
+    color: #000;
+}
+.portfolio li a:hover{
+    color: #ff305b;
+}
+.portfolio .portfolio-item{
+    float: left;
+    width: 30%;
+    /* background-color: #F1C30D; */
+    padding: 20px;
+    margin-top: 15px;
+    margin-left: 33px;
+
+}
+.portfolio .portfolio-item img{
+    width: 100%;
+    display: block;
+}
+.portfolio .portfolio-item .overlay{
+    background-color: rgba(0, 0, 0, 0.532);
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.portfolio .portfolio-item .overlay:hover{
+    opacity: 1;
+}
+
+.inner{
+    position: relative;
+}
+.portfolio .portfolio-item .overlay i{
+    color: #FF305B;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+
+/*----facts---------------------------------------------------*/
+.facts {
+    background-color: #F1F1F1;
+    padding: 100px 0 125px 0;
+
+}
+.fact-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.fact-item i{
+    color: #ff305b;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.fact-item h4{
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0 0 10px;
+}
+.fact-item h5{
+    color: #555555;
+    font-weight: 600;
+
+}
+/*------------feedback-----------------*/
+.feedback{
+    padding: 100px 0 125px 0;
+}
+.feedback h2{
+    text-align: center;
+
+}
+.card{
+    margin: auto;
+    background-color: #F1F1F1;
+    width: 60%;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.card::after{
+    content: "";
+    border: solid 10px #ff305b;
+    border-width: 191px;
+    position: absolute;
+    top: -265px;
+    left: -191px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.card .img-container{
+    width: 110px;
+    margin: 12px auto;
+    position: relative;
+    top: 20px;
+    left: 80px;
+    float: left;
+    z-index: 999;
+}
+.card .img-container img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+.card .content p,
+.our-blog .content p{
+    color: rgb(85, 85, 85);
+    font-style: italic;
+    padding: 10px 0 10px;
+    line-height: 26px;
+}
+.card .content a,.card .content a i{
+    color: rgb(85, 85, 85);
+    font-size: 15px;
+
+}
+.card .content h5{
+    color: rgb(51, 51, 51);
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card .content{
+    float: left;
+    margin: 30px 0 30px;
+    padding-left: 130px;
+    width: 75%;
+}
+.stars{
+    margin-top: 20px;
+
+}
+.stars i{
+    font-size: 15px;
+    color: #F1C30D;
+}
+.feedback .active{
+    text-align: center;
+    /* position: relative; */
+}
+.active .active-dot{
+    width: 30px;
+    background-color: #FF305B;
+
+}
+.active .dot{
+    position: relative;
+    left: 50%;
+    top: 20px;
+    border: 1px solid #FF305B;
+    border-radius: 10px;
+    padding: 4px ;
+    float: left;
+    height: 10px;
+    margin: 0 3px;
+}
+/*------our-blog-----------------------------------*/
+.our-blog{
+    text-align: center;
+    padding: 100px 0 125px 0;
+    background-color: #F1F1F1;
+}
+.our-blog .blog-item{
+    background-color: #fff;
+    float: left;
+    position: relative;
+    left: 44px;
+    margin: 30px 20px 0 0 ;
+    width: 30%;
+}
+.our-blog .blog-item img
+
+{
+    width: 100%;
+}
+.our-blog .blog-item .youtube{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+.our-blog .blog-item .content{
+    text-align: left;
+    padding: 15px 0 0 0 ;
+}
+.our-blog .blog-item h3 {
+    margin-top: 15px;
+}
+.our-blog .blog-item h3 a{
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    font-size: 24px;
+}
+.our-blog .blog-item .blog-img{
+    position: relative;
+}
+.our-blog .blog-item .blog-img i{
+    position: absolute;
+    left: 36%;
+    top: -45%;
+    color: #EC2403;
+    font-size: 80px;
+}
+.our-blog .blog-item h3 a:hover,
+.our-blog .blog-item .content .read:hover a,
+.our-blog .blog-item .content .read:hover i{
+    color: #ff305b;
+}
+
+.our-blog .blog-item .content .read{
+    width: fit-content;
+}
+.our-blog .blog-item .content a,
+.our-blog .blog-item .content i{
+    color: #000;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+/*--------contact-us---------------------*/
+.contact-us{
+    text-align: center;
+    padding: 100px 0 125px 0;
+}
+.contact-us .container-contact{
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+}
+.contact-us .input-left{
+width: 49%;
+float: left;
+}
+.contact-us .input-right{
+    width: 49%;
+    margin-left: 17px;
+    float: left;
+}
+.contact-us input ,textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+/*-----footer-------------------*/
+.footer{
+    background-color: #333333;
+    padding: 50px 0;
+}
+.footer .social{
+    
+    text-align: center;
+}
+.footer .social a:hover i{
+    color: #FF305B;
+}
+.footer .social i {
+    color: #fff;
+    margin: 0;
+}
+.footer p {
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+.footer p a{
+    color: #ff305b;
+}
+@keyframes typing {
+    0%{
+        content: "De|";
+    }
+    10%{
+        content: "Desi|";
+    }
+    25%{
+        content: "Design|";
+    }
+    30%{
+        content: "Designer|";
+    }
+    40%{
+        content: "Design|";
+    }
+    45%{
+        content: "Desi|";
+    }
+    55%{
+        content: "De|";
+    }
+    60%{
+        content: "Deve|";
+    }
+    70%{
+        content: "Develo|";
+    }
+    85%{
+        content: "Developer|";
+    }
+    90%{
+        content: "Develo|";
+    }
+    95%{
+        content: "Deve|";
+    }
+    100%{
+        content: "De|";
+    }
+
+}
